@@ -3,21 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Assignment 3</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #fff;
+    }
+    h2 {
+      text-align: center;
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+    table.middle {
+      border-collapse: separate;
+      border-spacing: 1px;
+      border: 1px solid #000;
+      margin: 20px auto 30px auto;
+      width: 90%;
+    }
+    table.middle td, table.middle th {
+      border: 1px solid #000;
+      padding: 1px 8px;
+      font-size: 18px;
+      vertical-align: middle;
+      text-align: left;
+    }
+    .center {
+      text-align: center;
+    }
+    .right {
+      text-align: right;
+    }
+    .green {
+      background: #108510;
+      color: #fff;
+    }
+    .blue {
+      background: #0333c0;
+      color: #fff;
+    }
+    /* Table 3: default cells are much taller */
+    #table-3 td {
+      height: 250px;
+      text-align: center;
+      vertical-align: middle;
+      padding: 0;
+    }
+    #table-3 .green, #table-3 .blue {
+      height: 32px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    #t-image img {
+      display: block;
+      margin: auto;
+      max-width: 320px;
+      max-height: 220px;
+      border: 2px solid #333;
+    }
+  </style>
 </head>
 <body>
-  <h1>HTML Assignment #3</h1>
+  <h2>HTML Assignment #3</h2>
 
   <!-- Table 1 -->
   <table id="table-1" class="middle">
     <tr>
       <td id="t11">left</td>
-      <td id="t12" class="center">center</td>
-      <td id="t13" class="right">right</td>
+      <td class="center" id="t12">center</td>
+      <td class="right" id="t13">right</td>
     </tr>
-    <tr class="center">
+    <tr>
       <td>left</td>
-      <td>center</td>
+      <td class="center">center</td>
       <td class="right">right</td>
     </tr>
     <tr>
@@ -30,42 +86,65 @@
   <!-- Table 2 -->
   <table id="table-2" class="middle">
     <tr>
-      <td id="t21" colspan="6"></td>
+      <td id="t21" colspan="6">&nbsp;</td>
     </tr>
     <tr>
-      <td></td><td></td><td></td><td></td><td></td><td></td>
+      <td>&nbsp;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <td></td><td></td><td></td><td></td><td></td><td></td>
+      <td></td>
+      <td>&nbsp;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <td></td><td></td><td></td><td></td><td></td><td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&nbsp;</td>
+      <td></td>
     </tr>
     <tr>
-      <td></td><td></td><td></td><td></td><td></td><td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <td></td><td></td><td></td><td></td><td></td><td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
   </table>
 
   <!-- Table 3 -->
   <table id="table-3" class="middle">
-    <tr class="green">
-      <td colspan="3"></td>
+    <tr>
+      <td class="green" colspan="3"> </td>
     </tr>
     <tr>
       <td></td>
       <td id="t-image">
-        <img src="https://i.dailymail.co.uk/1s/2020/05/19/09/28622392-8340173-image-a-5_1589875141989.jpg" 
-             alt="Basketball Dunk" width="300">
+        <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" alt="Dunking image" />
       </td>
       <td></td>
     </tr>
-    <tr class="blue">
-      <td colspan="3"></td>
+    <tr>
+      <td class="blue" colspan="3"> </td>
     </tr>
   </table>
-
 </body>
 </html>
