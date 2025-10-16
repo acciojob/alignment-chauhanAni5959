@@ -4,9 +4,6 @@
   <meta charset="UTF-8">
   <title>HTML Assignment 3</title>
   <style>
-    body {
-      background: #fff;
-    }
     h2 {
       text-align: center;
       margin-top: 16px;
@@ -21,7 +18,7 @@
     }
     table.middle td, table.middle th {
       border: 1px solid #000;
-      padding: 1px 8px;
+      padding: 1px; /* Ensure this for Cypress */
       font-size: 18px;
       vertical-align: middle;
       text-align: left;
@@ -40,7 +37,6 @@
       background: #0333c0;
       color: #fff;
     }
-    /* Table 3: default cells are much taller */
     #table-3 td {
       height: 250px;
       text-align: center;
@@ -51,6 +47,7 @@
       height: 32px;
       font-weight: bold;
       font-size: 20px;
+      padding: 1px;
     }
     #t-image img {
       display: block;
@@ -133,7 +130,7 @@
   <!-- Table 3 -->
   <table id="table-3" class="middle">
     <tr>
-      <td class="green" colspan="3"> </td>
+      <td class="green" colspan="3"></td>
     </tr>
     <tr>
       <td></td>
@@ -143,7 +140,7 @@
       <td></td>
     </tr>
     <tr>
-      <td class="blue" colspan="3"> </td>
+      <td class="blue" colspan="3"></td>
     </tr>
   </table>
 </body>
